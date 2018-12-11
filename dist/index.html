@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>到位APP - 高品质上门服务直约平台，家政服务，上门按摩，上门维修，搬家，安心到家！</title><link rel="stylesheet" href="./css/dist.min.css"><link rel="stylesheet" href="./css/reset.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_959483_80m952ouoak.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script><script type="text/javascript" src="./js/jq.js"></script><script type="text/javascript" src="./js/template.js"></script><script type="text/javascript" src="./js/dist.min.js"></script></head><body><div><div id="header"><div class="addressWrap"><div class="address"><div class="choose"><img src="./images/citypoint.png" alt=""> <span class="city">北京</span> <span class="switch">【切换城市】</span></div><ul class="directory"><li class="active"><a href="javascript:;">首页</a></li><li><a href="javascript:;">关于我们</a></li><li><a href="javascript:;">服务商</a></li><li><a href="javascript:;">商家入驻</a></li><li><a href="javascript:;">商家登录</a></li><li><a href="javascript:;">到位APP</a></li></ul></div></div><div class="navigationWrap"><div class="navigation"><img class="logo" src="./images/logo.png" alt=""><div class="search"><span class="icon"><i class="iconfont icon-sousuo"></i> </span><input type="text" placeholder="输入关键词搜索商家、服务"> <span class="serve">搜服务</span></div><img class="code" src="./images/2.png" alt=""></div></div></div><div id="section"><div class="banner"><div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide"><img src="./images/banner1.jpg" alt=""></div><div class="swiper-slide"><img src="./images/banner2.jpg" alt=""></div></div><div class="swiper-pagination"></div></div><ul class="shopList"></ul></div><div class="informationWrap"><div class="information"></div></div><div class="footer"><div class="footerTitle">到位<span>服务</span>保障</div><div class="footerInfo">到位平台担保交易安全，交易未成功100%退款</div><div class="footerServer"><span>优选服务</span> <span>全程保障</span> <span>安全无忧</span></div></div></div></div><script type="text/html" id="shopList">{{each data as shop i}}
+  <li class="shopLi">
+    <a class="shopName">
+      <span>{{shop.serviceIndex}}</span>
+      <i class="iconfont icon-gengduojiantou"></i>
+    </a>
+    <ul class="infoList">
+      {{each shop.serviceType as info i}}
+      <li class="infoLi"><a href="">{{info}}</a></li>
+      {{/each}}
+    </ul>
+  </li>
+  {{/each}}</script><script type="text/html" id="information">{{each data as information i}}
+  <div class="title">{{information.serviceIndex}}</div>
+  <div class="smallTitle">
+    <div class="content">
+      {{each information.serviceType as smallTitle i}}
+      <span>{{smallTitle}}</span>
+      {{/each}}
+    </div>
+    <span> 更多服务<i class="iconfont icon-gengduojiantou"></i></span>
+  </div>
+  <ul class="infoList">
+    {{each information.shopList as infoList i}}
+    <li class="infoLi">
+      <img class="liImg" src={{infoList.imgUrl}} alt="">
+      <div class="liTitle">{{infoList.serviceName}}</div>
+      <div class="liInfo">{{infoList.description}}</div>
+      <div class="liPrice">
+        <span class="liNum">{{infoList.price}}</span>
+        元/小时
+        <span class="liMore">查看详情</span>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+  <div class="smallLink">
+    {{each information.elseList as link i}}
+    <a href="javascript:;">{{link}}</a>
+    {{/each}}
+  </div>
+  {{/each}}</script></body></html>

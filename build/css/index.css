@@ -1,0 +1,293 @@
+#header {
+  width: 100%;
+  height: 130px;
+  background-color: #fff;
+}
+#header .addressWrap {
+  width: 100%;
+  height: 40px;
+  background-color: #f1f1f1;
+}
+#header .addressWrap .address {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+}
+#header .addressWrap .address .choose {
+  width: 162px;
+  height: 20px;
+  padding: 10px;
+  float: left;
+}
+#header .addressWrap .address .choose img {
+  vertical-align: middle;
+}
+#header .addressWrap .address .choose .city {
+  vertical-align: middle;
+}
+#header .addressWrap .address .choose .switch {
+  vertical-align: middle;
+  color: #898989;
+  font-size: 16px;
+}
+#header .addressWrap .address .directory {
+  width: 500px;
+  height: 40px;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+#header .addressWrap .address .directory li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+#header .addressWrap .address .directory li a {
+  font-weight: 700;
+}
+#header .addressWrap .address .directory li.active a {
+  color: #E94840;
+}
+#header .addressWrap .address .directory li:hover {
+  background-color: #fff;
+}
+#header .addressWrap .address .directory li:hover a {
+  color: #E94840;
+}
+#header .navigationWrap {
+  width: 100%;
+  height: 90px;
+}
+#header .navigationWrap .navigation {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#header .navigationWrap .navigation .search {
+  width: 600px;
+  height: 35px;
+  border: 2px solid #E94840;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#header .navigationWrap .navigation .search .icon {
+  display: inline-block;
+  width: 10%;
+  height: 100%;
+  text-align: center;
+  line-height: 35px;
+}
+#header .navigationWrap .navigation .search input {
+  width: 70%;
+  height: 100%;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+#header .navigationWrap .navigation .search .serve {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  line-height: 35px;
+  background-color: #E94840;
+  color: #fff;
+  text-align: center;
+}
+#header .navigationWrap .navigation .code {
+  height: 100%;
+}
+#section .banner {
+  width: 100%;
+  height: 300px;
+}
+#section .banner .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#section .banner .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+#section .banner .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+#section .banner .shopList {
+  width: 180px;
+  height: 300px;
+  background-color: #757881;
+  position: absolute;
+  top: 130px;
+  left: 80px;
+  z-index: 10;
+}
+#section .banner .shopList .shopLi {
+  width: 100%;
+  height: 10%;
+}
+#section .banner .shopList .shopLi .shopName {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  line-height: 30px;
+  text-align: center;
+}
+#section .banner .shopList .shopLi .shopName span {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+#section .banner .shopList .shopLi .shopName .icon-gengduojiantou {
+  font-size: 15px;
+  margin-left: 15px;
+}
+#section .banner .shopList .shopLi .infoList {
+  width: 150px;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  left: 180px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#section .banner .shopList .shopLi .infoList .infoLi {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  line-height: 30px;
+}
+#section .banner .shopList .shopLi .infoList .infoLi a {
+  color: #000;
+  font-weight: 700;
+}
+#section .banner .shopList .shopLi .infoList .infoLi:hover a {
+  color: #E94840;
+}
+#section .banner .shopList .shopLi:hover {
+  background-color: #60646d;
+}
+#section .banner .shopList .shopLi:hover .icon-gengduojiantou {
+  color: #60646d;
+}
+#section .banner .shopList .shopLi:hover .infoList {
+  display: block;
+}
+#section .informationWrap {
+  width: 100%;
+}
+#section .informationWrap .information {
+  width: 1200px;
+  margin: 0 auto;
+}
+#section .informationWrap .information .title {
+  width: 100%;
+  height: 70px;
+  line-height: 80px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+#section .informationWrap .information .smallTitle {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+#section .informationWrap .information .smallTitle .content {
+  display: inline-block;
+  font-size: 20px;
+  color: #3d3838;
+  width: 1000px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-left: 110px;
+}
+#section .informationWrap .information .infoList {
+  width: 100%;
+  height: 345px;
+  margin-top: 20px;
+}
+#section .informationWrap .information .infoList .infoLi {
+  margin-right: 8px;
+  float: left;
+  width: 210px;
+  height: 325px;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+}
+#section .informationWrap .information .infoList .infoLi .liImg {
+  width: 210px;
+  height: 210px;
+}
+#section .informationWrap .information .infoList .infoLi .liTitle {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+#section .informationWrap .information .infoList .infoLi .liInfo {
+  width: 100%;
+  height: 60px;
+  line-height: 18px;
+  font-size: 13px;
+  color: #929292;
+}
+#section .informationWrap .information .infoList .infoLi .liPrice {
+  width: 100%;
+  height: 20px;
+  color: #fb474f;
+  font-size: 14px;
+  font-weight: 700;
+}
+#section .informationWrap .information .infoList .infoLi .liPrice .liNum {
+  font-size: 20px;
+  margin-right: -4px;
+}
+#section .informationWrap .information .infoList .infoLi .liPrice .liMore {
+  float: right;
+  display: inline-block;
+  width: 76px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #fb474f;
+}
+#section .informationWrap .information .smallLink {
+  margin-top: 20px;
+  width: 1180px;
+  padding: 10px;
+  line-height: 30px;
+  border: 1px solid #eaeaea;
+}
+#section .informationWrap .information .smallLink a {
+  font-size: 14px;
+  color: #3d3838;
+  margin: 5px;
+}
+#section .footer {
+  width: 1200px;
+  height: 200px;
+  margin: 100px auto 0;
+  background-color: pink;
+}
